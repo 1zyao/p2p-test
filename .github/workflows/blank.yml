@@ -16,9 +16,9 @@ jobs:
           sudo docker pull traffmonetizer/cli:latest
           sleep 15
           echo === traffmonetizer/cli ===
-          sudo docker run -d --name tm0 traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+          sudo docker run -d --name tm traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
           echo === traffmonetizer/cli === Logs ===
-          sudo docker logs tm0 -t -f
+          sudo docker logs tm -t -f
           echo Done!
 
   win32:
@@ -31,9 +31,9 @@ jobs:
             sudo docker pull traffmonetizer/cli:latest
             sleep 15
             echo === traffmonetizer/cli ===
-            sudo docker run -d --name tm0 traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+            sudo docker run -d --name tm traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
             echo === traffmonetizer/cli === Logs ===
-            sudo docker logs tm0 -t -f
+            sudo docker logs tm -t -f
             echo Done!
   linux64:
     runs-on: ubuntu-latest
@@ -45,9 +45,9 @@ jobs:
             sudo docker pull traffmonetizer/cli:latest
             sleep 15
             echo === traffmonetizer/cli ===
-            sudo docker run -d --name tm0 traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+            sudo docker run -d --name tm traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
             echo === traffmonetizer/cli === Logs ===
-            sudo docker logs tm0 -t -f
+            sudo docker logs tm -t -f
             echo Done!
   linux32:
     runs-on: ubuntu-latest
@@ -59,7 +59,7 @@ jobs:
             sudo docker pull traffmonetizer/cli:latest
             sleep 15
             echo === traffmonetizer/cli ===
-            sudo docker run -d --name tm0 traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+            sudo docker run -d --name tm traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
             echo === traffmonetizer/cli === Logs ===
-            sudo docker logs tm0 -t -f
+            sudo docker logs tm -t -f
             echo Done!
