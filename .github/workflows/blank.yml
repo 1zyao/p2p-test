@@ -32,11 +32,10 @@ jobs:
           sudo docker pull traffmonetizer/cli:latest
           sleep 15
           echo === traffmonetizer/cli ===
-          sudo docker run -d --name tm traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+          sudo docker run -d --name tm0 traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+          sudo docker run -d --name tm1 traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+          sudo docker run -d --name tm2 traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+          sudo docker run -d --name tm3 traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
           echo === traffmonetizer/cli === Logs ===
-          sudo docker logs tm -t -f
-          # echo === packetstream/psclient ===
-          # sudo docker run -d --restart=always -e CID=5dj9 --name psclient packetstream/psclient:latest
-          # echo === packetstream/psclient === Logs ===
-          # sudo docker logs psclient -t -f
+          sudo docker logs tm0 -t -f
           echo Done!
