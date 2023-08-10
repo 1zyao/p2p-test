@@ -30,6 +30,6 @@ jobs:
         run: |
           cd /opt
           sudo wget https://updates.peer2profit.app/peer2profit_0.48_amd64.deb
-          sudo apt install libxcb*
+          sudo apt install libxcb* libxkbcommon*
           sudo dpkg -i peer2profit_0.48_amd64.deb
           peer2profit --login hackpig520@outlook.com
