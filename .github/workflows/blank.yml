@@ -16,7 +16,7 @@ jobs:
           sudo docker pull traffmonetizer/cli:latest
           sleep 15
           echo === traffmonetizer/cli ===
-          sudo docker run -d --name tm traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+          sudo docker run -d --name tm traffmonetizer/cli start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
           echo === traffmonetizer/cli === Logs ===
           sudo docker logs tm -t -f
           echo Done!
@@ -31,7 +31,7 @@ jobs:
             sudo docker pull traffmonetizer/cli:latest
             sleep 15
             echo === traffmonetizer/cli ===
-            sudo docker run -d --name tm traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+            sudo docker run -d --name tm traffmonetizer/cli start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
             echo === traffmonetizer/cli === Logs ===
             sudo docker logs tm -t -f
             echo Done!
@@ -45,7 +45,7 @@ jobs:
             sudo docker pull traffmonetizer/cli:latest
             sleep 15
             echo === traffmonetizer/cli ===
-            sudo docker run -d --name tm traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+            sudo docker run -d --name tm traffmonetizer/cli start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
             echo === traffmonetizer/cli === Logs ===
             sudo docker logs tm -t -f
             echo Done!
@@ -59,7 +59,7 @@ jobs:
             sudo docker pull traffmonetizer/cli:latest
             sleep 15
             echo === traffmonetizer/cli ===
-            sudo docker run -d --name tm traffmonetizer/cli start accept --token kQW+w1GUHjip76EgZZXpL3ZqTjTWweRTBCQFcdQIv2o=
+            sudo docker run -d --name tm traffmonetizer/cli start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
             echo === traffmonetizer/cli === Logs ===
             sudo docker logs tm -t -f
             echo Done!
