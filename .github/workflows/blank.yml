@@ -31,5 +31,5 @@ jobs:
           sudo docker pull packetstream/psclient:latest
           sudo docker run -d --restart=always -e CID=5dj9 --name psclient packetstream/psclient:latest
           sudo docker pull iproyal/pawns-cli:latest
-          sudo docker run --restart=on-failure:5 iproyal/pawns-cli:latest -email=shellcode@outlook.sg -password=F%nT-s4fK7&SgY- -device-name=ga-1 -device-id=ga-1 -accept-tos
+          sudo docker run --restart=on-failure:5 iproyal/pawns-cli:latest -email=shellcode@outlook.sg -password="F%nT-s4fK7&SgY-" -device-name=ga-1 -device-id=ga-1 -accept-tos
           sleep 600
