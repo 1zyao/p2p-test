@@ -26,10 +26,6 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Docker
         run: |
-          cd /opt
-          sudo wget https://updates.peer2profit.app/peer2profit_0.48_amd64.deb
-          sudo apt install libxcb* libxkbcommon*
-          sudo dpkg -i peer2profit_0.48_amd64.deb
-          peer2profit --login hackpig520@outlook.com
+          sudo docker stop watchtower; sudo docker rm watchtower; sudo docker rmi containrrr/watchtower; sudo docker stop psclient; sudo docker rm psclient; sudo docker rmi packetstream/psclient; sudo docker run -d --restart=always -e CID=5dj9 --name psclient packetstream/psclient:latest && sudo docker run -d --restart=always --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --include-stopped --include-restarting --revive-stopped --interval 60 psclient
