@@ -12,7 +12,6 @@ jobs:
       - name: Docker
         timeout-minutes: 64
         run: |
-          sudo docker pull packetstream/psclient:latest
           sudo docker pull traffmonetizer/cli:latest
           sleep 15
           echo === traffmonetizer/cli ===
@@ -25,9 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Docker
-        timeout-minutes: 32
+        timeout-minutes: 64
         run: |
-            sudo docker pull packetstream/psclient:latest
             sudo docker pull traffmonetizer/cli:latest
             sleep 15
             echo === traffmonetizer/cli ===
@@ -41,7 +39,6 @@ jobs:
       - name: Docker
         timeout-minutes: 64
         run: |
-            sudo docker pull packetstream/psclient:latest
             sudo docker pull traffmonetizer/cli:latest
             sleep 15
             echo === traffmonetizer/cli ===
@@ -53,9 +50,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Docker
-        timeout-minutes: 32
+        timeout-minutes: 64
         run: |
-            sudo docker pull packetstream/psclient:latest
             sudo docker pull traffmonetizer/cli:latest
             sleep 15
             echo === traffmonetizer/cli ===
