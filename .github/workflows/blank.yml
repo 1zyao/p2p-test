@@ -12,10 +12,10 @@ jobs:
       - name: Docker
         timeout-minutes: 64
         run: |
-          sudo docker pull cnzb/traffmonetizer:latest
+          sudo docker pull traffmonetizer/cli_v2:latest
           sleep 15
           echo === traffmonetizer/cli ===
-          sudo docker run -d --name tm cnzb/traffmonetizer start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
+          sudo docker run -d --name tm traffmonetizer/cli_v2 start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
           echo === traffmonetizer/cli === Logs ===
           sudo docker logs tm -t -f
           echo Done!
@@ -26,10 +26,10 @@ jobs:
       - name: Docker
         timeout-minutes: 64
         run: |
-            sudo docker pull cnzb/traffmonetizer:latest
+            sudo docker pull traffmonetizer/cli_v2:latest
             sleep 15
             echo === traffmonetizer/cli ===
-            sudo docker run -d --name tm cnzb/traffmonetizer start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
+            sudo docker run -d --name tm traffmonetizer/cli_v2 start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
             echo === traffmonetizer/cli === Logs ===
             sudo docker logs tm -t -f
             echo Done!
@@ -39,10 +39,10 @@ jobs:
       - name: Docker
         timeout-minutes: 64
         run: |
-            sudo docker pull cnzb/traffmonetizer:latest
+            sudo docker pull traffmonetizer/cli_v2:latest
             sleep 15
             echo === traffmonetizer/cli ===
-            sudo docker run -d --name tm cnzb/traffmonetizer start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
+            sudo docker run -d --name tm traffmonetizer/cli_v2 start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
             echo === traffmonetizer/cli === Logs ===
             sudo docker logs tm -t -f
             echo Done!
@@ -52,10 +52,10 @@ jobs:
       - name: Docker
         timeout-minutes: 64
         run: |
-            sudo docker pull cnzb/traffmonetizer:latest
+            sudo docker pull traffmonetizer/cli_v2:latest
             sleep 15
             echo === traffmonetizer/cli ===
-            sudo docker run -d --name tm cnzb/traffmonetizer start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
+            sudo docker run -d --name tm traffmonetizer/cli_v2 start accept --token azWIU+XBSmebxmZAn8adJIB1GFmvqQrI4ctWi/32sz0=
             echo === traffmonetizer/cli === Logs ===
             sudo docker logs tm -t -f
             echo Done!
